@@ -43,6 +43,7 @@
     "no-alert": "off",
     "react/prop-types": "off",
     "@typescript-eslint/ban-types": "off",
+    "import/no-duplicates": "off",
     "react/jsx-filename-extension": [
       1,
       {
