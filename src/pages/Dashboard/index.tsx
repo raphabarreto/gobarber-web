@@ -20,9 +20,9 @@ import {
   Calendar,
 } from './styles';
 
-import logoImg from '../../assets/logo.svg';
-import { useAuth } from '../../hooks/auth';
-import api from '../../services/api';
+import logoImg from '~/assets/logo.svg';
+import { useAuth } from '~/hooks/auth';
+import api from '~/services/api';
 
 interface MonthAvailabilityItem {
   day: number;

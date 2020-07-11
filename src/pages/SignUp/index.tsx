@@ -5,16 +5,16 @@ import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Link, useHistory } from 'react-router-dom';
 
-import api from '../../services/api';
+import api from '~/services/api';
 
-import { useToast } from '../../hooks/toast';
+import { useToast } from '~/hooks/toast';
 
-import getValidationErrors from '../../utils/getValidationErrors';
+import getValidationErrors from '~/utils/getValidationErrors';
 
-import logo from '../../assets/logo.svg';
+import logo from '~/assets/logo.svg';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
+import Input from '~/components/Input';
+import Button from '~/components/Button';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
 

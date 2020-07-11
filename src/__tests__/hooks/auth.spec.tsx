@@ -1,8 +1,8 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import MockAdapter from 'axios-mock-adapter';
 
-import api from '../../services/api';
-import { useAuth, AuthProvider } from '../../hooks/auth';
+import api from '~/services/api';
+import { useAuth, AuthProvider } from '~/hooks/auth';
 
 const apiMock = new MockAdapter(api);
 

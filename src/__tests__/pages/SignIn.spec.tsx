@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, wait } from '@testing-library/react';
 
-import SignIn from '../../pages/SignIn';
+import SignIn from '~/pages/SignIn';
 
 const mockedHistoryPush = jest.fn();
 const mockedSignIn = jest.fn();
@@ -16,7 +16,7 @@ jest.mock('react-router-dom', () => {
   };
 });
 
-jest.mock('../../hooks/auth', () => {
+jest.mock('~/hooks/auth', () => {
   return {
     useAuth: () => ({
       signIn: mockedSignIn,
@@ -24,7 +24,7 @@ jest.mock('../../hooks/auth', () => {
   };
 });
 
-jest.mock('../../hooks/toast', () => {
+jest.mock('~/hooks/toast', () => {
   return {
     useToast: () => ({
       addToast: mockedAddToast,
